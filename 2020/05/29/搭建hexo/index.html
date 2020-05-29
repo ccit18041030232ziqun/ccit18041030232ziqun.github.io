@@ -22,29 +22,37 @@
     var CONFIG = {"hostname":"ccit18041030232ziqun.github.io","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="玻璃晴朗，橘子辉煌">
-<meta property="og:type" content="website">
-<meta property="og:title" content="十里顾清欢">
-<meta property="og:url" content="http://ccit18041030232ziqun.github.io/index.html">
+  <meta name="description" content="下面是关于如何搭建hexo的方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建hexo">
+<meta property="og:url" content="http://ccit18041030232ziqun.github.io/2020/05/29/%E6%90%AD%E5%BB%BAhexo/index.html">
 <meta property="og:site_name" content="十里顾清欢">
-<meta property="og:description" content="玻璃晴朗，橘子辉煌">
+<meta property="og:description" content="下面是关于如何搭建hexo的方法">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/CCIT18101030214TPJ/resource//QQ%E6%88%AA%E5%9B%BE20200327175115.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/CCIT18101030214TPJ/resource//timg.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/CCIT18101030214TPJ/resource//QQ%E6%88%AA%E5%9B%BE20200327184951.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/CCIT18101030214TPJ/resource//QQ%E6%88%AA%E5%9B%BE20200327202538.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/CCIT18101030214TPJ/resource//7a0fb1a640d490f234de14c9e5d89732.png">
+<meta property="article:published_time" content="2020-05-29T11:14:58.925Z">
+<meta property="article:modified_time" content="2020-05-29T11:23:56.935Z">
 <meta property="article:author" content="嘉树">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/CCIT18101030214TPJ/resource//QQ%E6%88%AA%E5%9B%BE20200327175115.png">
 
-<link rel="canonical" href="http://ccit18041030232ziqun.github.io/">
+<link rel="canonical" href="http://ccit18041030232ziqun.github.io/2020/05/29/%E6%90%AD%E5%BB%BAhexo/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false
+    isHome : false,
+    isPost : true
   };
 </script>
 
-  <title>十里顾清欢</title>
+  <title>搭建hexo | 十里顾清欢</title>
   
 
 
@@ -157,10 +165,10 @@
             
 
   <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://ccit18041030232ziqun.github.io/2020/05/29/%E6%90%AD%E5%BB%BAhexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -174,8 +182,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/29/%E6%90%AD%E5%BB%BAhexo/" class="post-title-link" itemprop="url">搭建hexo</a>
+          搭建hexo
         </h1>
 
         <div class="post-meta">
@@ -214,112 +221,127 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <blockquote>
+        <blockquote>
 <p>下面是关于如何搭建hexo的方法</p>
 </blockquote>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/29/%E6%90%AD%E5%BB%BAhexo/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+<a id="more"></a>
+
+<h3 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h3><p>Hexo是一款基于Node.js的静态博客框架，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener" title="hexo官网">hexo官网</a>进行详细的查看，这个可选择中文查看。</p>
+<h3 id="1：安装Git"><a href="#1：安装Git" class="headerlink" title="1：安装Git"></a>1：安装Git</h3><p>点击<a href="https://git-scm.com/download/win" target="_blank" rel="noopener" title="Git官网">Git官网</a>下载对应的版本，win10一般是64位。</p>
+<p>在安装过程中一路next</p>
+<p><strong>检查git是否安装成功</strong></p>
+<p>在CMD窗口（R+win输入cmd即可打开CMD窗口)输入指令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git</span><br></pre></td></tr></table></figure>
+
+<p>等待。</p>
+<p>到这里git就安装好了，这时会有一个Git Bash的命令工具（鼠标右击就会出现）。</p>
+<h3 id="2：下载配置Nodejs"><a href="#2：下载配置Nodejs" class="headerlink" title="2：下载配置Nodejs"></a>2：下载配置Nodejs</h3><p>进入<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener" title="nodejs">nodejs</a>下载，根据自己的电脑选择<br>在安装过程中一路next<br><strong>检查是否成功</strong><br>在CMD窗口（R+win输入cmd即可打开CMD窗口)输入指令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">| node -v</span><br><span class="line">| npm -v</span><br></pre></td></tr></table></figure>
+
+<p>结果显示如下代表安装成功</p>
+<p><img src="https://cdn.jsdelivr.net/gh/CCIT18101030214TPJ/resource//QQ%E6%88%AA%E5%9B%BE20200327175115.png" alt=""></p>
+<h3 id="3：安装Hexo"><a href="#3：安装Hexo" class="headerlink" title="3：安装Hexo"></a>3：安装Hexo</h3><p>前面git和nodejs安装好后，就可以安装hexo博客框架了。</p>
+<p>首先创建一个文件夹，命名为你想要的名字，我的名字是blog，这个文件夹在后续就是用来存放你所创建博客的所有文件。这个文件也称根目录。</p>
+<p><strong>1.安装Hexo</strong></p>
+<p>右键git bash打开，这个时候会有命令窗口弹出。或者（win+r）输入cmd，然后cd到你创建的blog文件夹。</p>
+<p>在窗口中输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>然后等待安装，过程如下，这个过程需要的等待，请耐心。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/CCIT18101030214TPJ/resource//timg.jpg" alt=""></p>
+<p><strong>2.检验是否安装成功</strong></p>
+<p>在窗口中接着输入hexo -v来检验是否安装成功</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+
+<p>结果显示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/CCIT18101030214TPJ/resource//QQ%E6%88%AA%E5%9B%BE20200327184951.png" alt=""></p>
+<p>至此已全部安装完。</p>
+<p><strong>3.初始化网址</strong></p>
+<p>在窗口中接着输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>这个过程可能会比较慢，请耐心等待</p>
+<p>最后结果如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">added 432 packages in 59.037s</span><br><span class="line">INFO Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
+
+<p>表明初始化已成功。</p>
+<p><strong>4.安装网址所需要的依赖插件</strong></p>
+<p>在窗口中接着输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>5.生成静态网页和开启本地服务</strong></p>
+<p>在窗口中接着输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g&#x2F;&#x2F;生成静态网址</span><br><span class="line">hexo s&#x2F;&#x2F;开启本地服务器</span><br></pre></td></tr></table></figure>
+
+<p>结果显示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/CCIT18101030214TPJ/resource//QQ%E6%88%AA%E5%9B%BE20200327202538.png" alt=""></p>
+<p>这就代表启动成功了。</p>
+<p>在浏览器输入网址<a href="https://link.zhihu.com/?target=http%3A//localhost%3A4000/">http://localhost:4000</a>就可以查看你的本地博客网页了。</p>
+<p>页面如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/CCIT18101030214TPJ/resource//7a0fb1a640d490f234de14c9e5d89732.png" alt=""></p>
+<p>如果想关闭本地服务，Ctrl+C 就可以了 或者关闭这个命令窗口。</p>
+<p><font color="red">注</font>：每次想浏览你的本地博客都需在你的根目录下鼠标右击打开git bash 在窗口中输入<font color="red">hexo s</font>命令字符。</p>
+
     </div>
 
     
     
     
+        <div class="reward-container">
+  <div>你可以打赏了呦</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.jpg" alt="嘉树 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.jpg" alt="嘉树 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>嘉树
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://ccit18041030232ziqun.github.io/2020/05/29/%E6%90%AD%E5%BB%BAhexo/" title="搭建hexo">http://ccit18041030232ziqun.github.io/2020/05/29/搭建hexo/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ccit18041030232ziqun.github.io/2020/05/24/hello-world/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar1.jpg">
-      <meta itemprop="name" content="嘉树">
-      <meta itemprop="description" content="玻璃晴朗，橘子辉煌">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="十里顾清欢">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/24/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-24 18:08:05" itemprop="dateCreated datePublished" datetime="2020-05-24T18:08:05+08:00">2020-05-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-29 19:27:23" itemprop="dateModified" datetime="2020-05-29T19:27:23+08:00">2020-05-29</time>
-              </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/05/24/hello-world/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/24/hello-world/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/24/hello-world/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/05/24/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
@@ -327,12 +349,10 @@
 
   </div>
 
-  
-
-
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -379,6 +399,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo简介"><span class="nav-number">1.</span> <span class="nav-text">Hexo简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1：安装Git"><span class="nav-number">2.</span> <span class="nav-text">1：安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2：下载配置Nodejs"><span class="nav-number">3.</span> <span class="nav-text">2：下载配置Nodejs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3：安装Hexo"><span class="nav-number">4.</span> <span class="nav-text">3：安装Hexo</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
