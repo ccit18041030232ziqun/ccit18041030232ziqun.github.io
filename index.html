@@ -186,7 +186,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-06-19 10:31:44 / 修改时间：15:30:34" itemprop="dateCreated datePublished" datetime="2020-06-19T10:31:44+08:00">2020-06-19</time>
+              <time title="创建时间：2020-06-19 10:31:44 / 修改时间：15:36:18" itemprop="dateCreated datePublished" datetime="2020-06-19T10:31:44+08:00">2020-06-19</time>
             </span>
 
           
@@ -214,34 +214,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="关于开发板的第二篇博文，我们讲一下板子的服务特性"><a href="#关于开发板的第二篇博文，我们讲一下板子的服务特性" class="headerlink" title="关于开发板的第二篇博文，我们讲一下板子的服务特性"></a>关于开发板的第二篇博文，我们讲一下板子的服务特性</h4><h5 id="1-首先还是要确定自己电脑上的蓝牙是否已打开（在设置中哦，大家自己去找）"><a href="#1-首先还是要确定自己电脑上的蓝牙是否已打开（在设置中哦，大家自己去找）" class="headerlink" title="1.首先还是要确定自己电脑上的蓝牙是否已打开（在设置中哦，大家自己去找）"></a>1.首先还是要确定自己电脑上的蓝牙是否已打开（在设置中哦，大家自己去找）</h5><h5 id="2-下载文件到开发板"><a href="#2-下载文件到开发板" class="headerlink" title="2.下载文件到开发板"></a>2.下载文件到开发板</h5><p>数据线一端连接板子，一端连接开发板，下载固件到BBC板子中，板子在程序设计里就有了蓝牙加速计服务和蓝牙led服务。如下图所示</p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E6%88%AA%E5%9B%BE.png" alt=""></p>
-<h5 id="3-借由辅助工具浏览器"><a href="#3-借由辅助工具浏览器" class="headerlink" title="3.借由辅助工具浏览器"></a>3.借由辅助工具浏览器</h5><p>打开谷歌浏览器输入 chrome://bluetooth-internals/这个网址，找到我们的bbc板子进行设备连接</p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E5%BC%80%E5%A7%8B.png" alt=""></p>
-<p>首先我们点右侧的Devices，再点击右上方的Start Scan就会出现以上界面，紧接着我们点击inspect，就会出现以下画面</p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E5%85%AB%E4%B8%AA.png" alt=""></p>
-<p>上图中的方框中，显示Connected则表示我们连接成功.</p>
-<h5 id="4-特性"><a href="#4-特性" class="headerlink" title="4.特性"></a>4.特性</h5><p>我们在谷歌浏览器打开这个链接 <a href="https://lancaster-university.github.io/microbit-docs/resources/bluetooth/bluetooth_profile.html" target="_blank" rel="noopener">https://lancaster-university.github.io/microbit-docs/resources/bluetooth/bluetooth_profile.html</a> ，找到LED SERVICE（开发板）的UUID和LED Matrix State（LED服务）的UUID，我们可以看到两者的服务特性UUID是一致的，说明我们的服务已添加成功。如下图所示</p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E7%89%B9%E6%80%A7.png" alt=""></p>
-<h5 id="5-服务"><a href="#5-服务" class="headerlink" title="5.服务"></a>5.服务</h5><p>打开这个链接 <a href="https://makecode.microbit.org/#editor" target="_blank" rel="noopener">https://makecode.microbit.org/#editor</a> ，点击蓝牙，我们把蓝牙温度服务这个方块移动到如下图的位置，然后进行下载</p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E4%B8%8B%E8%BD%BD.png" alt=""></p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E4%B8%8B%E8%BD%BD%E6%88%90%E5%8A%9F.png" alt=""></p>
-<h5 id="6-源代码编辑"><a href="#6-源代码编辑" class="headerlink" title="6.源代码编辑"></a>6.源代码编辑</h5><p>源代码如下</p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/2020-06-19%20%2813%29.png" alt=""></p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/2020-06-19%20%2814%29.png" alt=""></p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/2020-06-19%20%2815%29.png" alt=""></p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/2020-06-19%20%2816%29.png" alt=""></p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/2020-06-19%20%2817%29.png" alt=""></p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/2020-06-19%20%2818%29.png" alt=""></p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/2020-06-19%20%2819%29.png" alt=""></p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/2020-06-19%20%2820%29.png" alt=""></p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/2020-06-19%20%2821%29.png" alt=""></p>
-<h5 id="7-源代码检查"><a href="#7-源代码检查" class="headerlink" title="7.源代码检查"></a>7.源代码检查</h5><p>代码写好之后，我们打开浏览器，按F12检查一下有没有错误</p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E6%A3%80%E6%9F%A5.png" alt=""></p>
-<p>如上图所示，Status中出现两个true，服务特性UUID和开发板一致则表示连接成功</p>
-<h5 id="8-bbc板子实验效果"><a href="#8-bbc板子实验效果" class="headerlink" title="8.bbc板子实验效果"></a>8.bbc板子实验效果</h5><p><img src="http://qb4l1rigw.bkt.clouddn.com/%E8%87%AA%E5%B7%B1%E8%AE%BE%E5%A4%87.jpg" alt=""></p>
-<p>成功啦！！！</p>
-
+          <p>关于开发板的第二篇博文，我们讲一下板子的服务特性</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/06/19/%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84%E6%9C%8D%E5%8A%A1%E7%89%B9%E6%80%A7/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
