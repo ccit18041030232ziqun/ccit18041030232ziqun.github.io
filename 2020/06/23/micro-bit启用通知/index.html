@@ -22,30 +22,31 @@
     var CONFIG = {"hostname":"ccit18041030232ziqun.github.io","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="关于micro:bit的第三篇博文，接下来我们学习它的读写特性">
+  <meta name="description" content="关于micro:bit的第四篇博文，我们看一下它的启用通知">
 <meta property="og:type" content="article">
-<meta property="og:title" content="micro:bit的读写特性">
-<meta property="og:url" content="http://ccit18041030232ziqun.github.io/2020/06/21/micro-bit%E7%9A%84%E8%AF%BB%E5%86%99%E7%89%B9%E6%80%A7/index.html">
+<meta property="og:title" content="micro:bit启用通知">
+<meta property="og:url" content="http://ccit18041030232ziqun.github.io/2020/06/23/micro-bit%E5%90%AF%E7%94%A8%E9%80%9A%E7%9F%A5/index.html">
 <meta property="og:site_name" content="十里顾清欢">
-<meta property="og:description" content="关于micro:bit的第三篇博文，接下来我们学习它的读写特性">
+<meta property="og:description" content="关于micro:bit的第四篇博文，我们看一下它的启用通知">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/%E8%AF%BB1.png">
-<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/%E8%AF%BB2.png">
-<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/LED1.png">
-<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/LED2.png">
-<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/%E6%8C%89%E9%92%AE.png">
-<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/%E5%BC%80%E5%A7%8B1.png">
-<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/%E7%82%B911.png">
-<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/%E7%82%B91.2.png">
-<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/%E8%87%AA%E5%B7%B1%E8%AE%BE%E5%A4%872.jpg">
-<meta property="article:published_time" content="2020-06-21T11:09:05.000Z">
-<meta property="article:modified_time" content="2020-06-21T11:42:56.148Z">
+<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/%E8%B0%83%E7%94%A81.png">
+<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/%E8%B0%83%E7%94%A82.png">
+<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/%E8%B0%83%E7%94%A83.jpg">
+<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/%E8%B0%83%E7%94%A84.png">
+<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/%E5%B0%8F1.png">
+<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/%E5%B0%8F2.png">
+<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/%E8%B0%83%E7%94%A84.png">
+<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/xyz.png">
+<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/%E5%AE%9E%E9%AA%8C1.png">
+<meta property="og:image" content="http://qb4l1rigw.bkt.clouddn.com/%E8%87%AA%E5%B7%B1%E8%AE%BE%E5%A4%87.jpg">
+<meta property="article:published_time" content="2020-06-23T02:07:08.000Z">
+<meta property="article:modified_time" content="2020-06-23T08:18:48.503Z">
 <meta property="article:author" content="嘉树">
-<meta property="article:tag" content="读写特性">
+<meta property="article:tag" content="蓝牙启动通知">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://qb4l1rigw.bkt.clouddn.com/%E8%AF%BB1.png">
+<meta name="twitter:image" content="http://qb4l1rigw.bkt.clouddn.com/%E8%B0%83%E7%94%A81.png">
 
-<link rel="canonical" href="http://ccit18041030232ziqun.github.io/2020/06/21/micro-bit%E7%9A%84%E8%AF%BB%E5%86%99%E7%89%B9%E6%80%A7/">
+<link rel="canonical" href="http://ccit18041030232ziqun.github.io/2020/06/23/micro-bit%E5%90%AF%E7%94%A8%E9%80%9A%E7%9F%A5/">
 
 
 <script id="page-configurations">
@@ -57,7 +58,7 @@
   };
 </script>
 
-  <title>micro:bit的读写特性 | 十里顾清欢</title>
+  <title>micro:bit启用通知 | 十里顾清欢</title>
   
 
 
@@ -174,7 +175,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ccit18041030232ziqun.github.io/2020/06/21/micro-bit%E7%9A%84%E8%AF%BB%E5%86%99%E7%89%B9%E6%80%A7/">
+    <link itemprop="mainEntityOfPage" href="http://ccit18041030232ziqun.github.io/2020/06/23/micro-bit%E5%90%AF%E7%94%A8%E9%80%9A%E7%9F%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar1.jpg">
@@ -187,7 +188,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          micro:bit的读写特性
+          micro:bit启用通知
         </h1>
 
         <div class="post-meta">
@@ -198,7 +199,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-06-21 19:09:05 / 修改时间：19:42:56" itemprop="dateCreated datePublished" datetime="2020-06-21T19:09:05+08:00">2020-06-21</time>
+              <time title="创建时间：2020-06-23 10:07:08 / 修改时间：16:18:48" itemprop="dateCreated datePublished" datetime="2020-06-23T10:07:08+08:00">2020-06-23</time>
             </span>
 
           
@@ -210,8 +211,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2020/06/21/micro-bit%E7%9A%84%E8%AF%BB%E5%86%99%E7%89%B9%E6%80%A7/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/06/21/micro-bit%E7%9A%84%E8%AF%BB%E5%86%99%E7%89%B9%E6%80%A7/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/06/23/micro-bit%E5%90%AF%E7%94%A8%E9%80%9A%E7%9F%A5/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/06/23/micro-bit%E5%90%AF%E7%94%A8%E9%80%9A%E7%9F%A5/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -226,22 +227,32 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>关于micro:bit的第三篇博文，接下来我们学习它的读写特性</p>
+        <p>关于micro:bit的第四篇博文，我们看一下它的启用通知</p>
 <a id="more"></a>
 
-<h5 id="1-添加读取函数"><a href="#1-添加读取函数" class="headerlink" title="1.添加读取函数"></a>1.添加读取函数</h5><p>读取函数需在原先代码基础上进行添加，函数代码如图下</p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E8%AF%BB1.png" alt=""></p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E8%AF%BB2.png" alt=""></p>
-<h5 id="2-添加一个关于写特性的函数来控制LED小灯的变化，函数代码如图下"><a href="#2-添加一个关于写特性的函数来控制LED小灯的变化，函数代码如图下" class="headerlink" title="2.添加一个关于写特性的函数来控制LED小灯的变化，函数代码如图下"></a>2.添加一个关于写特性的函数来控制LED小灯的变化，函数代码如图下</h5><p><img src="http://qb4l1rigw.bkt.clouddn.com/LED1.png" alt=""></p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/LED2.png" alt=""></p>
-<h5 id="3-添加按钮，读取BBC板子"><a href="#3-添加按钮，读取BBC板子" class="headerlink" title="3.添加按钮，读取BBC板子"></a>3.添加按钮，读取BBC板子</h5><p><img src="http://qb4l1rigw.bkt.clouddn.com/%E6%8C%89%E9%92%AE.png" alt=""></p>
-<h5 id="4-保存我们所有的代码，并在谷歌浏览器上打开，如下图"><a href="#4-保存我们所有的代码，并在谷歌浏览器上打开，如下图" class="headerlink" title="4.保存我们所有的代码，并在谷歌浏览器上打开，如下图"></a>4.保存我们所有的代码，并在谷歌浏览器上打开，如下图</h5><p><img src="http://qb4l1rigw.bkt.clouddn.com/%E5%BC%80%E5%A7%8B1.png" alt=""></p>
-<p>我们点击Start Scan 按钮，对BBC板子进行配对，然后点击Read Model Number按钮，点击F12，会发现左侧的代码发生改变，如下图</p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E7%82%B911.png" alt=""></p>
-<p>继续点击 Randomise LEDs按钮，左侧代码相应做出变化，如下图</p>
-<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E7%82%B91.2.png" alt=""></p>
-<h5 id="4-看BBC板子实验现象"><a href="#4-看BBC板子实验现象" class="headerlink" title="4.看BBC板子实验现象"></a>4.看BBC板子实验现象</h5><p><img src="http://qb4l1rigw.bkt.clouddn.com/%E8%87%AA%E5%B7%B1%E8%AE%BE%E5%A4%872.jpg" alt=""></p>
-<p>大功告成啦！</p>
+<p>启用通知也需要依靠代码来实现</p>
+<h5 id="一-用户界面状态"><a href="#一-用户界面状态" class="headerlink" title="一.用户界面状态"></a>一.用户界面状态</h5><p>1.首先我们添加一个变量来实现这个功能</p>
+<p>var notifications enabled=flase;</p>
+<p>2.添加调用函数,如下图所示</p>
+<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E8%B0%83%E7%94%A81.png" alt=""></p>
+<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E8%B0%83%E7%94%A82.png" alt=""></p>
+<h5 id="二-验证状态"><a href="#二-验证状态" class="headerlink" title="二.验证状态"></a>二.验证状态</h5><p>订阅和接收通知时，我们还需要检查连接的设备是否包含所要求的相关服务和特性。 因此，我们将在订阅加速计数据通知的代码中添加一些验证函数</p>
+<p>验证函数如下图</p>
+<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E8%B0%83%E7%94%A83.jpg" alt=""></p>
+<h5 id="三-启用和禁用通知"><a href="#三-启用和禁用通知" class="headerlink" title="三.启用和禁用通知"></a>三.启用和禁用通知</h5><p>通知有接受通知和拒绝通知，我们的当然也拥有啦，所以我们需要添加一些函数，来实现启用和禁用通知。如下图</p>
+<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E8%B0%83%E7%94%A84.png" alt=""></p>
+<h5 id="四-通知"><a href="#四-通知" class="headerlink" title="四.通知"></a>四.通知</h5><p>有通知消息怎么办？我们还需要添加一些代码，来处理这些通知。</p>
+<p>如下图</p>
+<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E5%B0%8F1.png" alt=""></p>
+<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E5%B0%8F2.png" alt=""></p>
+<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E8%B0%83%E7%94%A84.png" alt=""></p>
+<h5 id="五-处理通知"><a href="#五-处理通知" class="headerlink" title="五.处理通知"></a>五.处理通知</h5><p>我们接收到了通知，就需要去处理通知，所以我们还是要继续添加一些代码</p>
+<p>如下图</p>
+<p><img src="http://qb4l1rigw.bkt.clouddn.com/xyz.png" alt=""></p>
+<h5 id="六-实验现象"><a href="#六-实验现象" class="headerlink" title="六.实验现象"></a>六.实验现象</h5><p>我们保存自己所编写的代码，并在谷歌浏览器打开，加载程序并运行，就会发现如下图一样</p>
+<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E5%AE%9E%E9%AA%8C1.png" alt=""></p>
+<p>然后在电脑上连接我们的BBC板子,如下图实验现象</p>
+<p><img src="http://qb4l1rigw.bkt.clouddn.com/%E8%87%AA%E5%B7%B1%E8%AE%BE%E5%A4%87.jpg" alt=""></p>
 
     </div>
 
@@ -277,7 +288,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://ccit18041030232ziqun.github.io/2020/06/21/micro-bit%E7%9A%84%E8%AF%BB%E5%86%99%E7%89%B9%E6%80%A7/" title="micro:bit的读写特性">http://ccit18041030232ziqun.github.io/2020/06/21/micro-bit的读写特性/</a>
+    <a href="http://ccit18041030232ziqun.github.io/2020/06/23/micro-bit%E5%90%AF%E7%94%A8%E9%80%9A%E7%9F%A5/" title="micro:bit启用通知">http://ccit18041030232ziqun.github.io/2020/06/23/micro-bit启用通知/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -288,7 +299,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E8%AF%BB%E5%86%99%E7%89%B9%E6%80%A7/" rel="tag"># 读写特性</a>
+              <a href="/tags/%E8%93%9D%E7%89%99%E5%90%AF%E5%8A%A8%E9%80%9A%E7%9F%A5/" rel="tag"># 蓝牙启动通知</a>
           </div>
 
         
@@ -297,13 +308,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/06/19/%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84%E6%9C%8D%E5%8A%A1%E7%89%B9%E6%80%A7/" rel="prev" title="蓝牙设备的服务特性">
-      <i class="fa fa-chevron-left"></i> 蓝牙设备的服务特性
+    <a href="/2020/06/21/micro-bit%E7%9A%84%E8%AF%BB%E5%86%99%E7%89%B9%E6%80%A7/" rel="prev" title="micro:bit的读写特性">
+      <i class="fa fa-chevron-left"></i> micro:bit的读写特性
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/06/23/micro-bit%E5%90%AF%E7%94%A8%E9%80%9A%E7%9F%A5/" rel="next" title="micro:bit启用通知">
-      micro:bit启用通知 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -364,7 +372,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-添加读取函数"><span class="nav-number">1.</span> <span class="nav-text">1.添加读取函数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-添加一个关于写特性的函数来控制LED小灯的变化，函数代码如图下"><span class="nav-number">2.</span> <span class="nav-text">2.添加一个关于写特性的函数来控制LED小灯的变化，函数代码如图下</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-添加按钮，读取BBC板子"><span class="nav-number">3.</span> <span class="nav-text">3.添加按钮，读取BBC板子</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-保存我们所有的代码，并在谷歌浏览器上打开，如下图"><span class="nav-number">4.</span> <span class="nav-text">4.保存我们所有的代码，并在谷歌浏览器上打开，如下图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-看BBC板子实验现象"><span class="nav-number">5.</span> <span class="nav-text">4.看BBC板子实验现象</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#一-用户界面状态"><span class="nav-number">1.</span> <span class="nav-text">一.用户界面状态</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#二-验证状态"><span class="nav-number">2.</span> <span class="nav-text">二.验证状态</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#三-启用和禁用通知"><span class="nav-number">3.</span> <span class="nav-text">三.启用和禁用通知</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#四-通知"><span class="nav-number">4.</span> <span class="nav-text">四.通知</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#五-处理通知"><span class="nav-number">5.</span> <span class="nav-text">五.处理通知</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#六-实验现象"><span class="nav-number">6.</span> <span class="nav-text">六.实验现象</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
